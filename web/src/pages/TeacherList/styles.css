@@ -11,40 +11,25 @@
     color: var(--color-text-in-primary);
 }
 
-#search-teachers .input-block {
-    position: relative;
+#search-teachers button {
+  width: 100%;
+  height: 5.6rem;
+  background: var(--color-secundary);
+  color: var(--color-button-text);
+  border: 0;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  font: 700 1.6rem Archivo;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background-color 0.2s;
+  margin-top: 3.2rem;
 }
 
-/*Todo input-block que possui um input-block antes.*/
-#search-teachers .input-block + .input-block {
-    margin-top: 1.4rem;
-}
-
-#search-teachers .input-block label {
-    font-size: 1.4rem;
-}
-
-#search-teachers .input-block input {
-    width: 100%;
-    height: 5.6rem;
-    margin-top: 0.8rem;
-    border-radius: 0.8rem;
-    background-color: var(--color-input-background);
-    border: var(--color-line-in-white);
-    outline: 0;
-    padding: 0 1.6rem;
-    font: 1.6rem Archivo;
-}
-
-#search-teachers .input-block:focus-within::after {
-    width: calc(100% - 3.2rem);
-    height: 2px;
-    content: ''; /*Obrigatório.*/
-    background-color: var(--color-primary-light);
-    position: absolute;
-    left: 1.6rem;
-    right: 1.6rem;
-    bottom: 0;
+#search-teachers button:hover {
+  background: var(--color-secundary-dark);
 }
 
 #page-teacher-list main {
@@ -59,14 +44,16 @@
 
     #search-teachers {
         display: grid;
-        grid-template-columns: repeat(3, 1fr); /*Repetir 1fr 3 vezes.*/
+        grid-template-columns: repeat(4, 1fr); /*Repetir 1fr 3 vezes.*/
         column-gap: 16px; /*Distânciamente entre cada coluna.*/
         position: absolute;
         bottom: -28px;
     }
 
-    /*Todo input-block que possui um input-block antes.*/
-    #search-teachers .input-block + .input-block {
+    /*Todo input-block que possui um input-block depois.*/
+    #search-teachers .input-block + .input-block,
+    /*Todo select-block que possui um select-block depois.*/
+    #search-teachers .select-block + .select-block {
         margin-top: 0;
     }
 
