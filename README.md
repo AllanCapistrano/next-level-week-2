@@ -17,3 +17,4 @@ O projeto trata-se uma plataforma de estudos online, que tem como objetivo conec
 **Tecnologias utilizadas**
 - Front-end: [ReactJS](https://pt-br.reactjs.org)
 - Back-end: [NodeJS](https://nodejs.org/en/)
+- Mobile: [React Native](https://reactnative.dev)
