@@ -1,7 +1,8 @@
 # Proffy | Next Level Week
 
 <p align="center">
-  <img src="https://i.imgur.com/qPIHc32.png" alt="Proffy" width="700px">
+  <img src="https://i.imgur.com/qPIHc32.png" alt="Proffy" width="700px" height="350">
+  <img src="https://i.imgur.com/BFScX7f.png" alt="Proffy" width="175px" height="350">
 </p>
 
 ### Descrição ###
