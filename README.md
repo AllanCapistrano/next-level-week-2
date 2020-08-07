@@ -20,8 +20,8 @@ O projeto trata-se uma plataforma de estudos online, que tem como objetivo conec
 - Mobile: [React Native](https://reactnative.dev)
 
 ## Desafios ##
-**Link para a visualização e descrição dos desafios:** [Clique aqui](https://www.notion.so/Vers-o-2-0-Proffy-eefca1b981694cd0a895613bc6235970) <br />
-**Layouts para os desafios:** [Clique aqui](https://github.com/AllanCapistrano/next-level-week-2/releases/tag/1.0)
+Visualização e descrição dos desafios - [Clique aqui](https://www.notion.so/Vers-o-2-0-Proffy-eefca1b981694cd0a895613bc6235970) <br />
+Layouts para os desafios - [Clique aqui](https://github.com/AllanCapistrano/next-level-week-2/releases/tag/1.0)
 
 #### Desafios propostos: ####
 - [ ] Autenticação de usuários.
