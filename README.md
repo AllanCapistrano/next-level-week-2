@@ -29,6 +29,7 @@ O projeto trata-se uma plataforma de estudos online, que tem como objetivo conec
 - [Axios](https://www.npmjs.com/package/axios)
 - [Expo Google Fonts](https://github.com/expo/google-fonts)
 - [Knex](http://knexjs.org)
+- [Bcrypt](https://www.npmjs.com/package/bcrypt)
 
 ------------
 ## Como ver o projeto e modificá-lo ##
