@@ -1,4 +1,5 @@
 import { Request, Response } from 'express';
+import bcrypt from 'bcrypt';
 
 import db from '../database/connection';
 
@@ -26,12 +27,14 @@ export default class RegisterController {
 
     const trx = await db.transaction();
 
+    const encryptedPassword = await bcrypt.hash(password, 8);
+
     try {
       await trx('register').insert({
         name,
         lastName,
         email,
-        password
+        password: encryptedPassword
       });
 
       await trx.commit();
