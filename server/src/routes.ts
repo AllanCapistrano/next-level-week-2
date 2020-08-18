@@ -12,11 +12,13 @@ import express from 'express';
 import ClassesController from './controllers/ClassesController';
 import ConnectionsController from './controllers/ConnectionsController';
 import RegisterController from './controllers/RegisterController';
+import LoginController from './controllers/LoginController';
 
 const routes = express.Router();
 const classesControllers = new ClassesController();
 const connectionsControllers = new ConnectionsController();
-const registerControllers = new RegisterController();
+const registersControllers = new RegisterController();
+const loginControllers = new LoginController();
 
 routes.get('/classes', classesControllers.index);
 routes.post('/classes', classesControllers.create);
@@ -24,7 +26,8 @@ routes.post('/classes', classesControllers.create);
 routes.get('/connections', connectionsControllers.index);
 routes.post('/connections', connectionsControllers.create);
 
-// routes.get('/register', registerControllers.index)
-routes.post('/register', registerControllers.create)
+routes.post('/register', registersControllers.create);
+
+routes.post('/login', loginControllers.login);
 
 export default routes;

@@ -3,20 +3,8 @@ import bcrypt from 'bcrypt';
 
 import db from '../database/connection';
 
-/*interface Register {
-  name: string;
-  lastName: string;
-  email: string;
-  password: string;
-}*/
-
 export default class RegisterController {
-  /*async index(request: Request, response: Response){
-    const registers = await db('register').select('register.*');
-
-    return response.json(registers);
-  }*/
-
+  /*Criar um novo usuário. */
   async create(request: Request, response: Response) {
     const {
       name,
@@ -46,7 +34,8 @@ export default class RegisterController {
       await trx.rollback();
 
       return response.status(400).json({
-        error: 'Unexpected error while creating new register'
+        ersuccess: false, 
+        message: 'Unexpected error while creating new register'
       });
     }
   }
