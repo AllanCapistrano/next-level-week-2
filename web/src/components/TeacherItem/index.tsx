@@ -47,6 +47,7 @@ const TeacherItem: React.FC<TeacherItemProps> = ({ teacher }) => {
         <a
           onClick={createNewConnection}
           href={`https://wa.me/${teacher.whatsapp}`}
+          // eslint-disable-next-line react/jsx-no-target-blank
           target="_blank"
         >
           <img src={whatsappIcon} alt="WhatsApp" />
