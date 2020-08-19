@@ -25,26 +25,27 @@ export default class LoginController {
     try {
       const { password } = passwordDb[0]; /*Pegando somente o conteúdo da senha.*/
 
+      /*Verifica se a senha passada no login está correta. */
       bcrypt.compare(login.password, password, function (err: any, res: any) {
-        if (err) {
+        if (err) { /*Caso ocorra algum erro durante a comparação.*/
           return response.status(404).json({
             success: false,
             message: "Unexpected error."
           })
         }
-        if (res) {
+        if (res) { /*Caso esteja tudo ok.*/
           return response.status(200).json({
             success: true,
             message: 'Successfully login.'
           });
-        } else {
+        } else {/*Caso a senha esteja incorreta.*/
           return response.status(400).json({
             success: false,
             message: 'Error, invalid email or password.'
           });
         }
       });
-    } catch (err) {
+    } catch (err) { /*Caso ocorra algum erro durante a autenticação..*/
       return response.status(400).json({
         success: false,
         message: "User authentication failed."
