@@ -43,13 +43,13 @@ function Landing() {
         <div className="buttons-container">
           <Link to="/study" className="study">
             <img src={studyIcon} alt="Estudar" />
-                        Estudar
-                    </Link>
+            Estudar
+          </Link>
 
           <Link to="/give-classes" className="give-classes">
             <img src={giveClassesIcon} alt="Dar aulas" />
-                        Dar aulas
-                    </Link>
+            Dar aulas
+          </Link>
         </div>
 
         <span className="total-connections">
