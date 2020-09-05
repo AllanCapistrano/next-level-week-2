@@ -58,3 +58,13 @@ Layouts para os desafios - [Clique aqui](https://github.com/AllanCapistrano/next
 - [ ] Salvando seus proffys favoritos.
 - [ ] Logout da aplicação.
 - [ ] Deploy da aplicação.
+
+------------
+
+## Autor ##
+- Allan Capistrano: [Github](https://github.com/AllanCapistrano) - [Linkedin](https://www.linkedin.com/in/allancapistrano/) - [E-mail](https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=asantos@ecomp.uefs.br)
+
+------------
+
+## Licença ##
+[MIT License (MIT)](https://github.com/AllanCapistrano/next-level-week-2/blob/master/LICENSE)
